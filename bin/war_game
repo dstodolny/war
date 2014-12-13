@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require File.dirname(__FILE__) + '/../lib/war_game'
+
+deck = Deck.new(2)
+player1 = Player.new('Player 1')
+player2 = Player.new('Player 2')
+game = Game.new(deck, player1, player2)
+game.play
